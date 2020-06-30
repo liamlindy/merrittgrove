@@ -1,93 +1,93 @@
 <!DOCTYPE html>
 <html>
 <head>
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+  <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+    <style>
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    div {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  </style>
 </head>
-<style>
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-</style>
 <body>
 
-<h3>Using CSS to style an HTML Form</h3>
+  <h3>Using CSS to style an HTML Form</h3>
 
-<div>
-<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+  <div>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-<input type=hidden name="orgid" value="00Dd0000000hiRW">
-<input type=hidden name="retURL" value="http://green-mountain-group.merrittgrove.com/">
+      <input type=hidden name="orgid" value="00Dd0000000hiRW">
+      <input type=hidden name="retURL" value="http://green-mountain-group.merrittgrove.com/">
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="llindy@merrittgrove.com">                                        -->
-<!--  ----------------------------------------------------------------------  -->
+      <!--  ----------------------------------------------------------------------  -->
+      <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+      <!--  these lines if you wish to test in debug mode.                          -->
+      <!--  <input type="hidden" name="debug" value=1>                              -->
+      <!--  <input type="hidden" name="debugEmail"                                  -->
+      <!--  value="llindy@merrittgrove.com">                                        -->
+      <!--  ----------------------------------------------------------------------  -->
 
-<label for="recordType">Case Record Type</label><select  id="recordType" name="recordType"><option value="">--None--</option><option value="0120W000001pS1I">External Request</option>
-<option value="0120W000001pS1D">Internal Case</option>
-</select><br>
+      <label for="recordType">Case Record Type</label><select  id="recordType" name="recordType"><option value="">--None--</option><option value="0120W000001pS1I">External Request</option>
+        <option value="0120W000001pS1D">Internal Case</option>
+      </select><br>
 
-<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+      <label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
 
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+      <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+      <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
 
-<label for="type">Type</label><select  id="type" name="type"><option value="">--None--</option><option value="Problem">Problem</option>
-<option value="Feature Request">Feature Request</option>
-<option value="Question">Question</option>
-</select><br>
+      <label for="type">Type</label><select  id="type" name="type"><option value="">--None--</option><option value="Problem">Problem</option>
+        <option value="Feature Request">Feature Request</option>
+        <option value="Question">Question</option>
+      </select><br>
 
-<label for="reason">Case Reason</label><select  id="reason" name="reason"><option value="">--None--</option><option value="User didn&#39;t attend training">User didn&#39;t attend training</option>
-<option value="Complex functionality">Complex functionality</option>
-<option value="Existing problem">Existing problem</option>
-<option value="Instructions not clear">Instructions not clear</option>
-<option value="New problem">New problem</option>
-</select><br>
+      <label for="reason">Case Reason</label><select  id="reason" name="reason"><option value="">--None--</option><option value="User didn&#39;t attend training">User didn&#39;t attend training</option>
+        <option value="Complex functionality">Complex functionality</option>
+        <option value="Existing problem">Existing problem</option>
+        <option value="Instructions not clear">Instructions not clear</option>
+        <option value="New problem">New problem</option>
+      </select><br>
 
-<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+      <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
 
-<label for="description">Description</label><textarea name="description"></textarea><br>
+      <label for="description">Description</label><br><textarea name="description"></textarea><br>
 
-<label for="priority">Priority</label><select  id="priority" name="priority"><option value="">--None--</option><option value="High">High</option>
-<option value="Medium">Medium</option>
-<option value="Low">Low</option>
-</select><br>
+      <label for="priority">Priority</label><select  id="priority" name="priority"><option value="">--None--</option><option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select><br>
 
-<input type="submit" name="submit">
+      <input type="submit" name="submit">
 
-</form>
-</div>
+    </form>
+  </div>
 
 </body>
 </html>
